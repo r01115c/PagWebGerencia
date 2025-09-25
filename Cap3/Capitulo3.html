@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Capítulo 3 - Sistemas, Organizaciones y Estrategia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:'Poppins',sans-serif;
+      background: radial-gradient(circle at center, #0a1f44 40%, #1e3c72 70%, #000000 100%);
+      color:#f3f3f3;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:30px 12px;
+    }
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      background:rgba(255,255,255,0.06);
+      border-radius:14px;
+      padding:26px;
+      box-shadow:0 8px 28px rgba(0,0,0,0.7);
+    }
+    header{ text-align:center; margin-bottom:18px; }
+    h1{
+      font-size:1.9rem;
+      color:#fff;
+      letter-spacing:0.6px;
+      margin-bottom:8px;
+      background: linear-gradient(90deg,#1e90ff,#00d4ff);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      -webkit-text-fill-color:transparent;
+      text-shadow:0 6px 18px rgba(0,0,0,0.6);
+    }
+    .btn-back{
+      display:inline-block;
+      margin-top:8px;
+      background:rgba(255,255,255,0.06);
+      color:#dff4ff;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      border:1px solid rgba(255,255,255,0.06);
+    }
+    .intro{ color:#dfeeff; margin: 14px 0 22px; line-height:1.7; text-align:justify; }
+
+    .accordion { margin-top:8px; }
+    .accordion-item{
+      background: rgba(255,255,255,0.03);
+      border:1px solid rgba(255,255,255,0.06);
+      border-radius:10px;
+      margin-bottom:12px;
+      overflow:hidden;
+    }
+    .accordion-header{
+      padding:14px 16px;
+      cursor:pointer;
+      font-weight:600;
+      background: linear-gradient(90deg, rgba(30,60,114,0.7), rgba(10,20,40,0.6));
+      color:#fff;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+    }
+    .accordion-header .arrow{ font-size:0.95rem; opacity:0.9; transform:rotate(0deg); transition: transform .25s ease; }
+    .accordion-item.active .accordion-header .arrow{ transform:rotate(180deg); }
+
+    .accordion-content{
+      display:none;
+      padding:16px;
+      background: rgba(0,0,0,0.35);
+      color:#e6eefc;
+      text-align:justify;
+      line-height:1.7;
+      font-size:0.97rem;
+    }
+    .accordion-item.active .accordion-content{ display:block; }
+
+    ul { margin-left:18px; margin-top:8px; }
+    li { margin-bottom:8px; }
+
+    .highlight{ color:#bfe7ff; font-weight:600; }
+
+    .section-end{
+      margin-top:18px;
+      padding-top:8px;
+      border-top:1px dashed rgba(255,255,255,0.06);
+    }
+
+    footer{ text-align:center; margin-top:18px; color:#cfe9ff; font-size:0.95rem; }
+
+    @media (max-width:720px){
+      .container{ padding:18px }
+      h1{ font-size:1.6rem }
+      .accordion-header{ font-size:0.95rem }
+      .accordion-content{ font-size:0.92rem }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>Capítulo 3 — Sistemas de Información, Organizaciones y Estrategia</h1>
+      <a class="btn-back" href="../index.html">⬅ Volver al Inicio</a>
+    </header>
+
+    <p class="intro">
+      En este capítulo se exploran las relaciones entre los sistemas de información (SI), la estructura organizacional y la estrategia empresarial. 
+      Veremos cómo los SI pueden crear o sostener ventajas competitivas, los marcos de análisis estratégico (Porter, cadena de valor), modelos digitales emergentes, 
+      gobernanza y métricas de TI, y los retos de la implementación y el cambio organizacional.
+    </p>
+
+    <div class="accordion" aria-live="polite">
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>Caso de apertura: Cuando la estrategia se vuelve digital</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Muchas compañías tradicionales han descubierto que la tecnología redefine su modelo de negocio. Un ejemplo típico: empresas que transformaron su relación con clientes y proveedores usando plataformas digitales, automatización y analítica avanzada. El capítulo inicia mostrando cómo la adopción estratégica de SI puede cambiar la propuesta de valor y los mecanismos de captura de valor en industrias enteras.
+          </p>
+          <p class="section-end">
+            <em>Idea clave:</em> la tecnología no es solo operación; puede ser el núcleo de la estrategia.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.1 Estrategia y ventaja competitiva</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Un SI puede ser fuente de ventaja competitiva si permite a la organización realizar actividades mejor, más baratas o de forma diferente a sus competidores.
+            Michael Porter plantea que la ventaja competitiva surge por dos grandes vías: liderazgo en costos y diferenciación.
+          </p>
+          <p><strong>Cómo contribuye un SI:</strong></p>
+          <ul>
+            <li><strong>Reducción de costos:</strong> automatización, optimización de inventarios, menor necesidad de recursos humanos para tareas repetitivas.</li>
+            <li><strong>Diferenciación:</strong> personalización masiva, mejor experiencia de cliente, servicios basados en datos.</li>
+            <li><strong>Foco/segmentación:</strong> SI que permiten conocer nichos y atenderlos con ofertas específicas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.2 Las cinco fuerzas de Porter y TI</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            El análisis de las cinco fuerzas (rivalidad entre competidores, amenaza de nuevos entrantes, poder de proveedores, poder de compradores y productos sustitutos) ayuda a evaluar la posición competitiva.
+            Los SI influyen en cada fuerza:
+          </p>
+          <ul>
+            <li><strong>Rivalidad:</strong> mejor inteligencia competitiva y velocidad de respuesta.</li>
+            <li><strong>Nuevos entrantes:</strong> las plataformas y el cloud pueden reducir o elevar barreras de entrada según el caso.</li>
+            <li><strong>Poder de proveedores/compradores:</strong> sistemas que aumentan la transparencia y reducen dependencia.</li>
+            <li><strong>Sustitutos:</strong> la innovación digital puede crear o neutralizar sustitutos.</li>
+          </ul>
+          <p class="section-end">Conclusión: integrar TI en el análisis estratégico cambia las prioridades y oportunidades.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.3 Cadena de valor y puntos de apalancamiento TI</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            La cadena de valor descompone la empresa en actividades primarias y de apoyo. Identificar dónde TI agrega mayor valor es clave para invertir con sentido.
+          </p>
+          <ul>
+            <li><strong>Actividades primarias:</strong> logística interna, operaciones, logística externa, marketing/ventas, servicio postventa — todas pueden optimizarse con SI.</li>
+            <li><strong>Actividades de apoyo:</strong> infraestructura, gestión de recursos humanos, desarrollo tecnológico — TI juega un rol central.</li>
+          </ul>
+          <p><strong>Puntos de apalancamiento:</strong> integración de información entre funciones, automatización de procesos críticos, mejora de tiempos de entrega y servicio.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.4 Modelos de negocio digitales y plataformas</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Los modelos digitales (marketplaces, plataformas, suscripción, freemium, SaaS) dependen de efectos de red, datos y confianza.
+            TI hace posible la creación de plataformas que conectan usuarios, proveedores y desarrolladores, generando un ecosistema.
+          </p>
+          <ul>
+            <li><strong>Efectos de red:</strong> a mayor número de usuarios, mayor valor para todos; TI gestiona escalabilidad y seguridad.</li>
+            <li><strong>Plataformas:</strong> infraestructura técnica, APIs, gestión de identidades y pagos.</li>
+            <li><strong>Monetización:</strong> publicidad, comisiones, suscripciones, datos analíticos.</li>
+          </ul>
+          <p class="section-end">Nota: diseñar la arquitectura técnica y las APIs es tan estratégico como la propuesta comercial.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.5 Integración de sistemas: ERP, CRM, SCM</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Integrar los sistemas principales evita silos de información y mejora la eficiencia. Tres sistemas clave:
+          </p>
+          <ul>
+            <li><strong>ERP:</strong> integra finanzas, inventarios y operaciones.</li>
+            <li><strong>CRM:</strong> gestiona relaciones con clientes y ventas.</li>
+            <li><strong>SCM:</strong> coordina la cadena de suministro y logística.</li>
+          </ul>
+          <p>La integración con analítica y BI permite decisiones basadas en datos a toda la organización.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.6 Gobernanza, alineamiento y ROI de TI</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Gobernanza TI garantiza que las inversiones estén alineadas con la estrategia. Conceptos importantes:
+          </p>
+          <ul>
+            <li><strong>IT governance:</strong> políticas, comités y métricas para priorizar proyectos.</li>
+            <li><strong>Alineamiento estratégico:</strong> frameworks (COBIT, ITIL) ayudan a conectar TI con objetivos del negocio.</li>
+            <li><strong>ROI y métricas:</strong> valor entregado, tiempo de recuperación, reducción de costo por transacción, satisfacción del cliente.</li>
+          </ul>
+          <p class="section-end">Consejo: medir KPIs relevantes y reportarlos a la alta dirección con foco en impacto al negocio.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.7 Riesgos, seguridad y privacidad</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            A medida que las empresas se digitalizan, aumentan riesgos de ciberataques y problemas de privacidad. Puntos clave:
+          </p>
+          <ul>
+            <li>Políticas de seguridad, cifrado y gestión de accesos.</li>
+            <li>Planes de continuidad del negocio y recuperación ante desastres.</li>
+            <li>Cumplimiento normativo (protección de datos, regulaciones locales e internacionales).</li>
+          </ul>
+          <p>La seguridad debe ser parte del diseño, no una capa añadida al final.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.8 Administración del cambio y adopción</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            Implementar SI estratégicos requiere gestionar personas, procesos y cultura. Buenas prácticas:
+          </p>
+          <ul>
+            <li>Involucrar a usuarios clave desde el inicio (sponsor ejecutivo).</li>
+            <li>Comunicar beneficios y training continuo.</li>
+            <li>Diseñar procesos de transición y mantener feedback loops para mejoras.</li>
+          </ul>
+          <p class="section-end">Sin gestión del cambio, los mejores sistemas pueden fracasar por baja adopción.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.9 Innovación continua y tecnologías emergentes</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p>
+            La innovación no es un proyecto único; es un ciclo. Tecnologías que están influyendo en la estrategia:
+          </p>
+          <ul>
+            <li>Inteligencia artificial y analítica avanzada.</li>
+            <li>Blockchain (transparencia y trazabilidad en cadenas).</li>
+            <li>IoT para visibilidad operacional.</li>
+            <li>Computación en la nube para agilidad y escalabilidad.</li>
+          </ul>
+          <p>El reto es experimentar rápido, validar y escalar lo que crea valor.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <span>3.10 Resumen, términos clave y preguntas</span>
+          <span class="arrow">▾</span>
+        </div>
+        <div class="accordion-content">
+          <p class="highlight">Resumen</p>
+          <p>
+            Los SI están profundamente ligados a la estrategia: optimizan operaciones, habilitan nuevos modelos de negocio y transforman la propuesta de valor.
+            La clave es identificar dónde TI genera ventaja, gestionarla con buena gobernanza y acompañar la implementación con cambio organizacional.
+          </p>
+
+          <p class="highlight" style="margin-top:10px">Términos clave</p>
+          <ul>
+            <li><strong>Ventaja competitiva</strong></li>
+            <li><strong>Cadena de valor</strong></li>
+            <li><strong>Plataformas digitales</strong></li>
+            <li><strong>ERP / CRM / SCM</strong></li>
+            <li><strong>Governance, Risk & Compliance (GRC)</strong></li>
+            <li><strong>Efectos de red</strong></li>
+          </ul>
+
+          <p class="highlight" style="margin-top:10px">Preguntas de repaso</p>
+          <ol>
+            <li>Explique cómo un SI puede apoyar una estrategia de liderazgo en costos.</li>
+            <li>¿En qué partes de la cadena de valor TI puede tener mayor impacto?</li>
+            <li>Describa los riesgos principales al migrar a la nube y cómo mitigarlos.</li>
+            <li>¿Qué es un efecto de red y por qué es importante para plataformas digitales?</li>
+            <li>Proponga 3 métricas para evaluar el ROI de un proyecto ERP.</li>
+          </ol>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>© 2025 | Gerencia de Sistemas de Información — Capítulo 3</p>
+    </footer>
+  </div>
+
+  <script>
+    // Accordeón - permite toggle de items (mantiene comportamiento simple como los capítulos previos)
+    document.querySelectorAll('.accordion-item').forEach(item=>{
+      const header = item.querySelector('.accordion-header');
+      header.addEventListener('click', ()=>{
+        item.classList.toggle('active');
+        // opcional: cerrar otros (descomenta si quieres comportamiento exclusivo)
+        // document.querySelectorAll('.accordion-item').forEach(i=>{ if(i!==item) i.classList.remove('active') });
+      });
+    });
+  </script>
+</body>
+</html>
